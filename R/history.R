@@ -51,6 +51,14 @@ history <- function(location,
     )
   }
 
+  if(length(hist$observations) == 0){
+    stop(paste0("No observations were returned for ",
+                location,
+                " on ",
+                date)
+    )
+  }
+  
   suffix <- ifelse(use_metric, "m", "i")
   df <- lapply(hist$observations, function(x) {
     list(
