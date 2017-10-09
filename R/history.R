@@ -251,7 +251,6 @@ history_range <- function(location,
                           message = TRUE) {
   if (no_api) {
     key = "606f3f6977348613"
-    limit = 100000
   }
 
   date_start <- as.Date(date_start, "%Y%m%d")
