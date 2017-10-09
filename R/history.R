@@ -234,7 +234,7 @@ history_range <- function(location,
                           raw = FALSE,
                           message = TRUE) {
   if (no_api) {
-    warning("no_api: this feature is not yet working")
+    key = "606f3f6977348613"
   }
 
   date_start <- as.Date(date_start, "%Y%m%d")
